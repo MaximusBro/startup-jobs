@@ -9,7 +9,7 @@ const notificationsArray = [
 	{ text: "Your application has accepted in 5 vacancies.", time: "10 min ago", srcCompany: CompanyImg, },
 ];
 
-const Index = () => {
+const Notifications = () => {
 	const [notifications, setNotifications] = useState(0);
 	const [notificationsShow, setNotificationsShow] = useState(false);
 	const toggleNotifications = useCallback(() => {
@@ -53,4 +53,4 @@ const Index = () => {
 	)
 }
 
-export default Index
+export default Notifications

@@ -2,7 +2,7 @@ interface NotificationIconProps {
 	toggleNotifications(): void;
 	notifications: number;
 }
-const Index: React.FC<NotificationIconProps> = ({ toggleNotifications, notifications }) => {
+const NotificationIcon: React.FC<NotificationIconProps> = ({ toggleNotifications, notifications }) => {
 
 	return (
 		<div className="notifications-area dropdown-toggle" role="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
@@ -21,4 +21,4 @@ const Index: React.FC<NotificationIconProps> = ({ toggleNotifications, notificat
 	)
 }
 
-export default Index
+export default NotificationIcon;

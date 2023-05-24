@@ -11,7 +11,7 @@ import HeaderImg from "/src/assets/images/header1-logo.svg"
 	transform: "translate3d(-246px, 36px, 0px);"
 } */
 
-const Index = () => {
+const MenuArea = () => {
 
 	const [showMenu, setShowMenu] = useState(false);
 	const toggleShowMenu = useCallback(() => {
@@ -40,4 +40,4 @@ const Index = () => {
 	)
 }
 
-export default Index
+export default MenuArea
