@@ -12,22 +12,29 @@ import CompanyImg from "/src/assets/images/bg/company-logo/notifacion-3.png"
 const Index = () => {
 	const [notifications, setNotifications] = useState(5);
 	const [notificationsShow, setNotificationsShow] = useState(false);
+	const [showMenu, setShowMenu] = useState(false);
+
 	const toggleNotifications = useCallback(() => {
 		setNotificationsShow(state => !state);
 		setNotifications(state => state + 1)
 	}, []);
+
+	const toggleShowMenu = useCallback(() => {
+		setShowMenu(state => !state)
+	}, [])
 	return (
 		<div>
 			<div className="menu-area">
 				<div className="header-logo">
 					<a href="index.html"><img alt="image" className="img-fluid" src="/src/assets/images/header1-logo.svg" /></a>
 				</div>
-				<div className="main-menu">
+				<div className={showMenu ? "main-menu show-menu" : "main-menu"}>
 					<div className="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
 						<div className="mobile-logo-wrap">
 							<a href="index.html"><img alt="image" src="/src/assets/images/header1-logo.svg" /></a>
 						</div>
-						<div className="menu-close-btn">
+						<div className="menu-close-btn"
+							onClick={() => setShowMenu(false)}>
 							<i className="bi bi-x-lg"></i>
 						</div>
 					</div>
@@ -149,7 +156,9 @@ const Index = () => {
 							</div>
 						</li>
 					</ul>
-					<div className="sidebar-button mobile-menu-btn ">
+					<div className="sidebar-button mobile-menu-btn "
+						onClick={toggleShowMenu}
+					>
 						<i className="bi bi-list"></i>
 					</div>
 				</div>
