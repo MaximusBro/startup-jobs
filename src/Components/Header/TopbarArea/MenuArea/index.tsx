@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react"
-import MenuList from "./MenuList"
-
+import MenuList from "./MenuList";
+import ClockImg from "/src/assets/images/icon/clock-1.svg";
+import CompanyImg from "/src/assets/images/bg/company-logo/notifacion-3.png"
 /* const notifacationsStyle = {
 	position: "absolute",
 	inset: "0px auto auto 0px;",
@@ -99,7 +100,7 @@ const Index = () => {
 											</div>
 											<div className="content">
 												<h6><a href="#">Your application has accepted in 5 vacancies.</a></h6>
-												<span><img src="/src/assets/images/icon/clock-1.svg" alt="" /> 10 min ago</span>
+												<span><img src={ClockImg} alt="" /> 10 min ago</span>
 											</div>
 										</li>
 										<li>
@@ -108,16 +109,16 @@ const Index = () => {
 											</div>
 											<div className="content">
 												<h6><a href="#">Your application has accepted in 5 vacancies.</a></h6>
-												<span><img src="/src/assets/images/icon/clock-1.svg" alt="" /> 10 min ago</span>
+												<span><img src={ClockImg} alt="" /> 10 min ago</span>
 											</div>
 										</li>
 										<li>
 											<div className="icon">
-												<img src="/src/assets/images/bg/company-logo/notifacion-3.png" alt="" />
+												<img src={CompanyImg} alt="" />
 											</div>
 											<div className="content">
 												<h6><a href="#">Your application has accepted in 5 vacancies.</a></h6>
-												<span><img src="/src/assets/images/icon/clock-1.svg" alt="" /> 10 min ago</span>
+												<span><img src={ClockImg} /> 10 min ago</span>
 											</div>
 										</li>
 									</ul>
