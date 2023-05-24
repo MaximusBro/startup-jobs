@@ -96,7 +96,7 @@ const Index = () => {
 									<ul>
 										<li>
 											<div className="icon">
-												<img src="/src/assets/images/bg/company-logo/notifacion-1.png" alt="" />
+												<img src={CompanyImg} alt="" />
 											</div>
 											<div className="content">
 												<h6><a href="#">Your application has accepted in 5 vacancies.</a></h6>
@@ -105,7 +105,7 @@ const Index = () => {
 										</li>
 										<li>
 											<div className="icon">
-												<img src="/src/assets/images/bg/company-logo/notifacion-2.png" alt="" />
+												<img src={CompanyImg} alt="" />
 											</div>
 											<div className="content">
 												<h6><a href="#">Your application has accepted in 5 vacancies.</a></h6>
