@@ -9,7 +9,7 @@ interface listProps {
 	listTitle: string;
 	listHref: string;
 }
-const Index: React.FC<MenuItemProps> = ({ title, hrefTitle, list }) => {
+const MenuItem: React.FC<MenuItemProps> = ({ title, hrefTitle, list }) => {
 	const [showCardion, setShowCardion] = useState(false);
 
 	const toggleShowCardion = useCallback(() => {
@@ -32,4 +32,4 @@ const Index: React.FC<MenuItemProps> = ({ title, hrefTitle, list }) => {
 	)
 }
 
-export default Index
+export default MenuItem

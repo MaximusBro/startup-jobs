@@ -1,5 +1,5 @@
 
-const index = () => {
+const MobileMenu = () => {
 	return (
 		<div className="for-mobile-menu d-lg-none d-block">
 			<div className="sign-in-btn mb-25">
@@ -32,4 +32,4 @@ const index = () => {
 	)
 }
 
-export default index
+export default MobileMenu

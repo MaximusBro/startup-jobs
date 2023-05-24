@@ -7,7 +7,7 @@ interface MainMenuProps {
 	showMenu: boolean;
 	setShowMenu(param1: boolean): void;
 }
-const Index: React.FC<MainMenuProps> = ({ showMenu, setShowMenu }) => {
+const MainMenu: React.FC<MainMenuProps> = ({ showMenu, setShowMenu }) => {
 	return (
 		<>
 			<div className={showMenu ? "main-menu show-menu" : "main-menu"}>
@@ -27,4 +27,4 @@ const Index: React.FC<MainMenuProps> = ({ showMenu, setShowMenu }) => {
 	)
 }
 
-export default Index
+export default MainMenu

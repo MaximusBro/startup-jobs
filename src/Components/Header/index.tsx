@@ -1,6 +1,6 @@
 import HeaderLogo from "./HeaderLogo"
 import TopbarArea from "./TopbarArea"
-const index = () => {
+const Header = () => {
 	return (
 		<>
 			<header className="header-area style-1">
@@ -13,4 +13,4 @@ const index = () => {
 
 }
 
-export default index
+export default Header

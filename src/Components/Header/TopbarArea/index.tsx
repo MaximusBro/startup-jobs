@@ -1,6 +1,6 @@
 import Topbar from "./Topbar"
 import MenuArea from "./MenuArea"
-const index = () => {
+const TopbarArea = () => {
 	return (
 		<div className="menu-topbar-area">
 			<Topbar />
@@ -9,4 +9,4 @@ const index = () => {
 	)
 }
 
-export default index
+export default TopbarArea

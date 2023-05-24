@@ -41,7 +41,7 @@ const list = [
 			{ listTitle: "Blog Details", listHref: "blog-details.html" },]
 	},
 ]
-const index = () => {
+const MenuList = () => {
 	return (
 		<div>
 			<ul className="menu-list">
@@ -55,4 +55,4 @@ const index = () => {
 	)
 }
 
-export default index
+export default MenuList

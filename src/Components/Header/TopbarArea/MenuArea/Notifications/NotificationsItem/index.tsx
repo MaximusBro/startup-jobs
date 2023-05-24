@@ -5,7 +5,7 @@ interface NotificationsItemProps {
 	text: string;
 	time: string;
 }
-const Index: React.FC<NotificationsItemProps> = React.memo(({ srcCompany, text, time }) => {
+const NotificationsItem: React.FC<NotificationsItemProps> = React.memo(({ srcCompany, text, time }) => {
 
 	return (
 		<>
@@ -23,4 +23,4 @@ const Index: React.FC<NotificationsItemProps> = React.memo(({ srcCompany, text, 
 }
 )
 
-export default Index
+export default NotificationsItem

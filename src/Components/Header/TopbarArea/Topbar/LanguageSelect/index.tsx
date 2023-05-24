@@ -2,7 +2,7 @@ import EnglishImg from "/src/assets/images/icon/flag-eng.svg";
 import GermanyImg from "/src/assets/images/icon/flag-germeny.svg";
 import FrenchImg from "/src/assets/images/icon/flag-french.svg"
 import BengaliImg from "/src/assets/images/icon/flag-bangla.svg"
-const index = () => {
+const LanguageSelect = () => {
 	return (
 
 		<div className="language-select">
@@ -17,4 +17,4 @@ const index = () => {
 	)
 }
 
-export default index
+export default LanguageSelect

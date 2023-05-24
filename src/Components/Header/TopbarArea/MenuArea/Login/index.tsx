@@ -1,5 +1,5 @@
 
-const index = () => {
+const HeaderLogin = () => {
 	return (
 		<>
 			<li className="d-md-flex d-none">
@@ -27,4 +27,4 @@ const index = () => {
 	)
 }
 
-export default index
+export default HeaderLogin

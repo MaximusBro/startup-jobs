@@ -1,6 +1,6 @@
 
 import LanguageSelect from "./LanguageSelect"
-const index = () => {
+const Topbar = () => {
 	return (
 		<div>
 			<div className="top-bar">
@@ -22,4 +22,4 @@ const index = () => {
 	)
 }
 
-export default index
+export default Topbar
