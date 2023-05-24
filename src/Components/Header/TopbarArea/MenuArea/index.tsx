@@ -11,10 +11,10 @@ import MenuList from "./MenuList"
 const Index = () => {
 	const [notifications, setNotifications] = useState(5);
 	const [notificationsShow, setNotificationsShow] = useState(false);
-
 	const toggleNotifications = useCallback(() => {
-		setNotificationsShow(state => !state)
-	}, [setNotificationsShow]);
+		setNotificationsShow(state => !state);
+		setNotifications(state => state + 1)
+	}, []);
 	return (
 		<div>
 			<div className="menu-area">

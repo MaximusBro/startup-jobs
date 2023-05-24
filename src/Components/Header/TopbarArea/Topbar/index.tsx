@@ -1,4 +1,4 @@
-import React from 'react'
+
 import LanguageSelect from "./LanguageSelect"
 const index = () => {
 	return (
